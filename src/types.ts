@@ -1,17 +1,15 @@
+export interface FCollection {
+	type: string
+	features: IFeature[]
+}
+
 export interface IFeature {
-	geometry: {
-		coordinates: {
-			latitude: number
-			longitute: number
-			c: number
-		}[]
-		id: string
-		properties: {
-			place: string
-			detail: string
-			type: string
-			tsunami: number
-		}
+	id: string
+	type: string
+	properties: {
+		place: string
+		detail: string
 		type: string
+		tsunami: number
 	}
 }
