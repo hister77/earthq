@@ -3,7 +3,7 @@ import type { ReactElement } from 'react'
 import { lazy, Suspense } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-const DataBox = lazy(async () => import('pages/DataBox'))
+const DataBox = lazy(async () => import('pages/Main'))
 
 export default function App(): ReactElement {
 	return (

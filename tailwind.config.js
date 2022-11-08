@@ -5,6 +5,11 @@ const formsPlugin = require('@tailwindcss/forms')
 const config = {
 	content: ['index.html', 'src/**/*.tsx'],
 	theme: {
+		extend: {
+			colors: {
+				'regal-blue': '#243c5a'
+			}
+		},
 		fontFamily: {
 			sans: ['Inter', ...defaultConfig.theme.fontFamily.sans]
 		}

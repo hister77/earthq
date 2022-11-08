@@ -3,6 +3,7 @@ import App from 'App'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { registerSW } from 'virtual:pwa-register'
+import defaultQueryFunction from './api/getCollection'
 import './index.css'
 
 registerSW()
@@ -12,7 +13,8 @@ const queryClient = new QueryClient({
 	defaultOptions: {
 		queries: {
 			staleTime: Number.POSITIVE_INFINITY,
-			retry: MAX_RETRIES
+			retry: MAX_RETRIES,
+			queryFn: defaultQueryFunction
 		}
 	}
 })

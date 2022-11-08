@@ -1,12 +1,16 @@
 import type { ReactElement } from 'react'
-import type { IFeature } from 'types'
+import type { Feature } from 'types'
 
-export default function Feature({
-	type,
-	id,
-	properties
-}: IFeature): ReactElement {
+export default function FeatureBox({ properties }: Feature): ReactElement {
 	return (
-		<div className='mb-2'>{`${type}: ${id} ${properties.place} ${properties.type}`}</div>
+		<tr>
+			<td>{properties.mag}</td>
+			<td>
+				<a href={properties.url} target='blank_'>
+					{properties.place}
+				</a>
+			</td>
+			<td>{properties.tsunami}</td>
+		</tr>
 	)
 }

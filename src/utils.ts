@@ -20,3 +20,17 @@ export function useMediaQuery(query: string): boolean {
 
 	return matches
 }
+
+export function formatDate(date = new Date(), dayOffset = 0): string {
+	const MAXDIGIT = 9
+	const year = date.getFullYear()
+	const month =
+		date.getMonth() + 1 > MAXDIGIT
+			? date.getMonth() + 1
+			: `0${date.getMonth() + 1}`
+	const day =
+		date.getDate() + dayOffset > MAXDIGIT
+			? date.getDate() + dayOffset
+			: `0${date.getDate() + dayOffset}`
+	return `${year}-${month}-${day}`
+}
