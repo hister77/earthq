@@ -1,6 +1,6 @@
 export interface Collection {
 	type: string
-	medadata: Metadata
+	metadata: Metadata
 	bbox: {
 		minimum_longitute: number
 		minimum_latitude: number
@@ -13,14 +13,12 @@ export interface Collection {
 }
 
 export interface Metadata {
-	metadata: {
-		generated: number
-		url: string
-		title: string
-		api: string
-		count: number
-		status: number
-	}
+	generated: number
+	url?: string
+	title: string
+	api?: string
+	count?: number
+	status?: number
 }
 
 export interface Feature {
@@ -29,6 +27,7 @@ export interface Feature {
 	url?: string
 	properties: {
 		url: string | undefined
+		time: number
 		mag: number
 		place: string
 		detail: string

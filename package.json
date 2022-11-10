@@ -6,7 +6,7 @@
 	"scripts": {
 		"build": "vite build",
 		"commit": "cz",
-		"dev": "vite --open",
+		"dev": "vite --host --open",
 		"prepare": "husky install",
 		"preview": "vite preview",
 		"preview:test": "start-server-and-test preview http://localhost:4173",
@@ -24,6 +24,8 @@
 	},
 	"dependencies": {
 		"@tanstack/react-query": "4.13.5",
+		"date-fns": "^2.29.3",
+		"google-map-react": "^2.2.0",
 		"query-string": "^7.1.1",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
@@ -38,6 +40,7 @@
 		"@testing-library/react": "13.4.0",
 		"@testing-library/user-event": "14.4.3",
 		"@types/css-mediaquery": "0.1.1",
+		"@types/google-map-react": "^2.1.7",
 		"@types/react": "18.0.24",
 		"@types/react-dom": "18.0.8",
 		"@types/react-router-dom": "5.3.3",

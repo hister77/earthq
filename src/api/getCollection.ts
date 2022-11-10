@@ -13,8 +13,6 @@ export default async function defaultQueryFunction({
 	const url = new URL(PATH + method, BASE)
 	if (method === '/query') {
 		url.search = queryString.stringify(search)
-		const response = await fetch(url.href)
-		return response.json() as Promise<Collection>
 	}
 	const response = await fetch(url.href)
 	return response.json() as Promise<Collection>

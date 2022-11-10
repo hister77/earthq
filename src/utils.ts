@@ -22,12 +22,13 @@ export function useMediaQuery(query: string): boolean {
 }
 
 export function formatDate(date = new Date(), dayOffset = 0): string {
+	const PAD = 1
 	const MAXDIGIT = 9
 	const year = date.getFullYear()
 	const month =
-		date.getMonth() + 1 > MAXDIGIT
-			? date.getMonth() + 1
-			: `0${date.getMonth() + 1}`
+		date.getMonth() + PAD > MAXDIGIT
+			? date.getMonth() + PAD
+			: `0${date.getMonth() + PAD}`
 	const day =
 		date.getDate() + dayOffset > MAXDIGIT
 			? date.getDate() + dayOffset
