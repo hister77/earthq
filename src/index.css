@@ -6,16 +6,17 @@ th,
 td {
 	@apply border border-zinc-500 bg-gray-800 p-1 px-1.5;
 }
-td {
-	@apply border border-zinc-500 bg-gray-800 p-1 px-1.5;
-}
 
 input[type='date'] {
-	@apply mr-0 ml-auto block w-full rounded-xl bg-gray-800 text-center text-sm;
+	@apply ml-auto block w-full rounded-xl bg-gray-800 text-center text-sm;
 }
 
 input[type='number'] {
-	@apply bg-gray-800 blur-0 focus:border-0;
+	@apply bg-gray-800;
+}
+
+#inputs label span {
+	@apply pl-2 text-sm;
 }
 
 @layer base {

@@ -29,6 +29,24 @@ export interface Feature {
 		url: string | undefined
 		time: number
 		mag: number
+		updated: number
+		tz: number
+		felt: number
+		cdi: number
+		mmi: number
+		alert: string
+		status: string
+		sig: number
+		net: string
+		code: string
+		ids: string
+		sources: string
+		types: string
+		nst: number
+		dmin: number
+		rms: number
+		gap: number
+		magType: string
 		place: string
 		detail: string
 		type: string
