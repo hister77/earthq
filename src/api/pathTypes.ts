@@ -1,7 +1,3 @@
-export interface Method {
-	path: 'application.json' | 'count' | 'query' | 'version'
-}
-
 export interface QueryParameters {
 	format: 'geojson'
 	endtime?: string
