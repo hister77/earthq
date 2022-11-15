@@ -10,7 +10,7 @@ export default function App(): ReactElement {
 		<BrowserRouter>
 			<Suspense fallback={<LoadingOrError />}>
 				<Routes>
-					<Route path='/' element={<DataBox />} />
+					<Route path='/earthq' element={<DataBox />} />
 				</Routes>
 			</Suspense>
 		</BrowserRouter>
