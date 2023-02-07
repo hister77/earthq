@@ -52,15 +52,11 @@ export interface Feature {
 		type: string
 		tsunami: number
 	}
-	geometry: Geometry[]
+	geometry: Geometry
 }
 
 export interface Geometry {
 	type: string
 	mag: number
-	coordinates: {
-		longitude: number
-		latitude: number
-		depth: number
-	}
+	coordinates: []
 }
