@@ -11,8 +11,8 @@ import type { QueryParameters } from '../api/pathTypes'
 
 const LIMIT = 1000
 const MAXRADIUSKM = 2000
-const LAT = 32.13
-const LONG = 23
+const LAT = 37.062_778
+const LONG = 37.379_167
 const OFFSET = -14
 const SPAN = 30
 
