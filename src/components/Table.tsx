@@ -14,12 +14,12 @@ export default function Table({ features }: Features): ReactElement {
 					<th>Magnitude</th>
 					<th>Time</th>
 					<th>Place</th>
-					<th>felt</th>
+					<th>Depth</th>
 				</tr>
 			</thead>
 			<tbody>
 				{features.map(feature => {
-					const { properties, id } = feature
+					const { properties, id, geometry } = feature
 					return (
 						<tr key={id}>
 							<td>{properties.mag}</td>
@@ -29,7 +29,7 @@ export default function Table({ features }: Features): ReactElement {
 									{properties.place}
 								</a>
 							</td>
-							<td>{properties.felt}</td>
+							<td>{geometry.coordinates[2]}</td>
 						</tr>
 					)
 				})}
